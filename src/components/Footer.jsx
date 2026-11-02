@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import hazelLogo from "../assets/logo.jpeg";
 
 const links = [
   ["Home", "/"],
@@ -15,7 +16,7 @@ export default function Footer() {
       <div className="home-container footer-main">
         <div className="footer-about">
           <Link className="brand-lockup" to="/">
-            <span className="brand-mark">H</span>
+            <img className="brand-logo" src={hazelLogo} alt="Hazel PR Company logo" />
             <span className="brand-copy"><strong>HAZEL PR</strong><small>COMPANY LTD</small></span>
           </Link>
           <p>100% indigenous owned company with foreign technical support partners providing diverse technical services in Nigeria and beyond.</p>
