@@ -18,9 +18,7 @@ export default function Navbar() {
         </NavLink>
         <div className="nav-links">
           {links.map(({ to, label, end }) => (
-            <NavLink key={to} to={to} end={end}>
-              {label}
-            </NavLink>
+            <NavLink key={to} to={to} end={end}>{label}</NavLink>
           ))}
         </div>
       </nav>
