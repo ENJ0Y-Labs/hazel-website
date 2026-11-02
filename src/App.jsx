@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { scrollToTop } from "./utils/scrollToTop.js";
 import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
@@ -13,7 +14,7 @@ function ScrollToTop() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+    scrollToTop();
   }, [pathname]);
 
   return null;
