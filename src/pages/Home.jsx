@@ -1,4 +1,4 @@
-import heroImage from "../assets/img1.jpeg";
+import heroImage from "../assets/img1.jpg";
 
 const services = [
   { icon: "construction", title: "Welding & Fabrication", description: "Structural and piping repairs, offshore platform adjustments, and metal joining and fabrication work." },
