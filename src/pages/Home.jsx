@@ -1,11 +1,11 @@
 import heroImage from "../assets/img1.jpeg";
 
 const services = [
-  { icon: "construction", title: "Welding & Fabrication", description: "Structural and piping repairs, offshore platform adjustments, and certified metal joining engineering." },
+  { icon: "construction", title: "Welding & Fabrication", description: "Structural and piping repairs, offshore platform adjustments, and metal joining and fabrication work." },
   { icon: "format_paint", title: "Blasting & Coating", description: "Abrasive and hydro blasting onshore and offshore to preserve structural integrity against marine corrosion." },
   { icon: "biotech", title: "NDT Services", description: "Non-destructive testing (UT, MPT, RT, PAUT) assuring asset integrity without unnecessary downtime." },
   { icon: "paragliding", title: "Rope Access", description: "Specialist work at height for inspections, maintenance, and structural cleaning in restricted marine zones." },
-  { icon: "propane_tank", title: "Tank Maintenance & Inspection", description: "Thorough testing, sludge removal, internal clearing, and tank shell integrity verification to API standards." },
+  { icon: "propane_tank", title: "Tank Maintenance & Inspection", description: "Thorough testing, sludge removal, internal clearing, and tank inspection and maintenance support." },
   { icon: "precision_manufacturing", title: "Installation Services", description: "High-standard engineering setups, subsea rigging assembly, and heavy industrial instrumentation commissioning." },
 ];
 
@@ -74,7 +74,7 @@ export default function Home() {
             {services.map((service) => <article className="service-card" key={service.title}>
               <div className="service-icon"><span className="material-symbols-outlined">{service.icon}</span></div>
               <div><h3>{service.title}</h3><p>{service.description}</p></div>
-              <span className="service-standard">{service.standard}</span>
+              <span className="service-standard">Service overview</span>
             </article>)}
           </div>
         </div>
