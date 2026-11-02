@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import cedarLogo from "../assets/logo-cedarharvestermontessorischools.jpeg";
 import amobiLogo from "../assets/logo-amobiservicesltd.jpeg";
-import hazelLogo from "../assets/logo-hazelprcompanyltd.jpeg";
 
 const clients = [
   {
@@ -20,12 +19,6 @@ const clients = [
     category: "Energy / Maritime",
     logo: amobiLogo,
     alt: "Amobi Services Ltd. logo",
-  },
-  {
-    name: "Hazel PR Company Ltd.",
-    category: "Enterprise",
-    logo: hazelLogo,
-    alt: "Hazel PR Company Ltd. logo",
   },
 ];
 
@@ -59,15 +52,14 @@ export default function OurClients() {
           <div className="clients-hero-copy">
             <h1>Our Clients</h1>
             <p>
-              Trusted by leading organizations across educational, residential,
-              technical, and industrial ecosystems.
+              The organizations listed below are identified as clients of Hazel PR Company.
             </p>
           </div>
           <div className="clients-hero-standards">
             <div><i /><span>Service Enquiries</span></div>
             <div><i /><span>Technical & Support Services</span></div>
           </div>
-        </div>
+         </div>
       </section>
 
       <section className="clients-directory">
@@ -77,7 +69,6 @@ export default function OurClients() {
               <span>Client Directory</span>
               <h2>Organizations</h2>
             </div>
-
           </div>
 
           <div className="clients-account-grid">
