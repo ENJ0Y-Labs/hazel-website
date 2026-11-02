@@ -46,7 +46,7 @@ export default function OurClients() {
         <div className="container">
           <div className="clients-hero-glow" />
           <div className="clients-eyebrow">
-            <span className="material-symbols-outlined">verified_user</span>
+            <span className="material-symbols-outlined">groups</span>
             <span>Organizations</span>
           </div>
           <div className="clients-hero-copy">
