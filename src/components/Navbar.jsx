@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import hazelLogo from "../assets/logo.jpeg";
 
 const links = [
   { to: "/", label: "Home", end: true },
@@ -14,7 +15,7 @@ export default function Navbar() {
     <header className="site-header">
       <nav className="navbar home-container" aria-label="Main navigation">
         <NavLink className="brand-lockup" to="/" aria-label="Hazel PR Company home">
-          <span className="brand-mark">H</span>
+          <img className="brand-logo" src={hazelLogo} alt="Hazel PR Company logo" />
           <span className="brand-copy"><strong>HAZEL PR</strong><small>COMPANY LTD</small></span>
         </NavLink>
         <div className="nav-links">
