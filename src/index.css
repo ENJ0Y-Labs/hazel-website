@@ -800,3 +800,111 @@ a.contact-card-value:hover { text-decoration: underline; }
   .compliance-pill > span { animation: none; }
 }
 
+/* Site-wide responsive refinements informed by Nigerian corporate and energy-sector benchmarks */
+img, iframe, video { max-width: 100%; }
+button, input, select, textarea { max-width: 100%; }
+.container, .home-container { min-width: 0; }
+.service-card, .industry-card, .reason-card, .client-card,
+.mission-card, .about-entity-card, .about-charter-card,
+.about-focus-grid article, .about-policy-grid article,
+.services-card, .security-feature-grid article,
+.security-solution-grid article, .security-duty-grid article,
+.clients-account-card, .contact-detail-card, .contact-form-panel {
+  min-width: 0;
+}
+.about-hero-copy, .services-hero-copy, .security-hero-copy,
+.contact-information, .contact-form-panel, .clients-account-copy {
+  min-width: 0;
+}
+.about-hero-copy h1, .services-hero-copy h1, .security-hero h1,
+.contact-hero h1, .clients-hero-copy h1 {
+  overflow-wrap: anywhere;
+}
+.contact-card-value, .footer-contact p, .footer-links a {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 900px) {
+  .container, .home-container { width: calc(100% - 48px); }
+  .about-hero-layout, .services-hero-layout, .security-hero-layout {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .about-hero-image, .services-showcase, .security-hero-visual {
+    width: 100%;
+    max-width: none;
+  }
+  .about-hero-image { height: clamp(260px, 52vw, 390px); }
+  .services-showcase-image, .security-hero-visual { min-height: 300px; }
+  .about-intro-grid, .about-charter-grid, .about-policy-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-strength-grid, .about-focus-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .about-industry-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .contact-main-layout { grid-template-columns: 1fr; gap: 36px; }
+  .contact-form-panel { padding: 30px; }
+  .reasons-layout { grid-template-columns: 1fr; gap: 28px; }
+  .services-card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .security-feature-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .footer-main { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 36px; }
+  .footer-about { grid-column: 1 / -1; }
+}
+
+@media (max-width: 700px) {
+  .about-hero-layout, .services-hero-layout, .security-hero-layout {
+    gap: 24px;
+  }
+  .about-hero-image { height: 280px; }
+  .about-strength-grid, .about-focus-grid,
+  .about-industry-grid, .about-charter-grid, .about-policy-grid {
+    grid-template-columns: 1fr;
+  }
+  .services-card-grid, .security-feature-grid { grid-template-columns: 1fr; }
+  .services-directory-heading { align-items: flex-start; flex-wrap: wrap; gap: 12px; }
+  .services-directory-heading > p { white-space: normal; }
+  .contact-group-heading { flex-wrap: wrap; }
+  .contact-map-card { max-width: none; }
+  .footer-main { grid-template-columns: 1fr; }
+  .footer-about { grid-column: auto; }
+}
+
+@media (max-width: 480px) {
+  .container, .home-container { width: calc(100% - 32px); }
+  .navbar { column-gap: 8px; }
+  .brand-lockup { min-width: 0; }
+  .brand-copy strong { white-space: nowrap; }
+  .nav-actions { flex-shrink: 0; }
+  .nav-links { justify-content: flex-start; column-gap: 14px; }
+  .hero-actions { width: 100%; }
+  .hero-actions > .button { flex: 1 1 100%; width: 100%; }
+  .hero-stats { width: 100%; grid-template-columns: 1fr; }
+  .hero-visual { min-height: 290px; }
+  .deployment-card { left: 10px; right: 10px; bottom: 10px; padding: 12px; }
+  .services-metrics { grid-template-columns: 1fr; }
+  .services-form-row, .contact-form-row { grid-template-columns: 1fr; }
+  .clients-account-card { align-items: flex-start; }
+  .clients-logo-frame, .clients-logo-placeholder {
+    width: 76px; height: 72px; flex-basis: 76px;
+  }
+  .contact-form-panel { padding: 22px 16px; }
+  .contact-map iframe { height: 340px; }
+  .contact-map { min-height: 340px; }
+  .contact-location-heading > a { min-height: 40px; }
+  .bottom-cta-content { align-items: stretch; }
+  .bottom-cta-content .button { width: 100%; }
+}
+
+@media (max-width: 360px) {
+  .container, .home-container { width: calc(100% - 24px); }
+  .brand-logo { width: 32px; height: 32px; }
+  .brand-copy strong { font-size: 11px; }
+  .brand-copy small { font-size: 6px; }
+  .nav-contact { padding-inline: 8px; font-size: 10px; }
+  .nav-links { column-gap: 11px; }
+  .nav-links a { font-size: 11px; }
+  .hero-copy h1 { font-size: 30px; }
+  .contact-group-heading h2 { font-size: 17px; }
+  .clients-account-card { gap: 10px; padding: 12px; }
+  .clients-account-copy h3 { font-size: 12px; }
+}
