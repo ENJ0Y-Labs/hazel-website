@@ -1,10 +1,7 @@
 import { Link } from "react-router-dom";
 import cedarLogo from "../assets/logo-cedarharvestermontessorischools.jpeg";
-import cedarMobileLogo from "../assets/logo-cedarharvestermontessorischools-mobile.jpeg";
 import amobiLogo from "../assets/logo-amobiservicesltd.jpeg";
-import amobiMobileLogo from "../assets/logo-amobiservicesltd-mobile.jpeg";
 import hazelLogo from "../assets/logo-hazelprcompanyltd.jpeg";
-import hazelMobileLogo from "../assets/logo-hazelprcompanyltd-mobile.jpeg";
 
 const clients = [
   {
@@ -13,7 +10,6 @@ const clients = [
     id: "048-EDU",
     description: "Perimeter guarding & children security protocols.",
     logo: cedarLogo,
-    mobileLogo: cedarMobileLogo,
     alt: "Cedar Harvester Montessori Schools logo",
   },
   {
@@ -29,7 +25,6 @@ const clients = [
     id: "219-OGS",
     description: "Technical logistics & offshore pipeline support integration.",
     logo: amobiLogo,
-    mobileLogo: amobiMobileLogo,
     alt: "Amobi Services Ltd. logo",
   },
   {
@@ -38,7 +33,6 @@ const clients = [
     id: "001-HQ",
     description: "Internal logistics, marketing and parent integration.",
     logo: hazelLogo,
-    mobileLogo: hazelMobileLogo,
     alt: "Hazel PR Company Ltd. logo",
   },
 ];
@@ -46,10 +40,9 @@ const clients = [
 function ClientLogo({ client }) {
   if (client.logo) {
     return (
-      <picture className="clients-logo-frame">
-        <source media="(max-width: 700px)" srcSet={client.mobileLogo} />
+      <div className="clients-logo-frame">
         <img src={client.logo} alt={client.alt} loading="lazy" />
-      </picture>
+      </div>
     );
   }
 
