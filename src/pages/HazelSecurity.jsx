@@ -51,13 +51,7 @@ export default function HazelSecurity() {
             <div className="security-eyebrow"><i />Tactical &amp; Industrial Guard Operations</div>
             <h1>Hazel Security</h1>
             <p className="security-division">A Division of Hazel PR Company Limited</p>
-            <div className="security-hero-stats">
-              <div><strong>24/7/365</strong><span>Active Deployment</span></div>
-              <i />
-              <div><strong>100%</strong><span>Indigenous Certified</span></div>
-              <i />
-              <div><strong>NIMASA/DPR</strong><span>Standard Compliant</span></div>
-            </div>
+            <p className="security-hero-summary">Security services for residential, commercial and industrial environments.</p>
           </div>
           <div className="security-hero-visual">
             <img src={securityImage} alt="Hazel Security operations and personnel" />
@@ -75,7 +69,7 @@ export default function HazelSecurity() {
           <p className="security-intro-copy">Hazel Security provides comprehensive security solutions. With our wealth of experience in the provision of security services, our personnel will have no difficulty in handling your peculiar security needs.</p>
           <div className="security-feature-grid">
             <article><span className="material-symbols-outlined">security</span><div><h3>Vigilance First</h3><p>Continuous field threat monitoring and defensive operational posture.</p></div></article>
-            <article><span className="material-symbols-outlined">model_training</span><div><h3>Certified Operatives</h3><p>Rigorous tactical background screening and institutional protocols.</p></div></article>
+            <article><span className="material-symbols-outlined">model_training</span><div><h3>Personnel &amp; Procedures</h3><p>Service delivery guided by agreed procedures and client requirements.</p></div></article>
             <article><span className="material-symbols-outlined">precision_manufacturing</span><div><h3>Integrated Tech</h3><p>Seamless blend of human patrol vigilance and automated telemetry.</p></div></article>
           </div>
         </div>
