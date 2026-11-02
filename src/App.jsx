@@ -1,4 +1,5 @@
-import { Navigate, Route, Routes } from "react-router-dom";
+import { useEffect } from "react";
+import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
 import Home from "./pages/Home.jsx";
@@ -8,9 +9,20 @@ import HazelSecurity from "./pages/HazelSecurity.jsx";
 import OurClients from "./pages/OurClients.jsx";
 import ContactUs from "./pages/ContactUs.jsx";
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  }, [pathname]);
+
+  return null;
+}
+
 export default function App() {
   return (
     <>
+      <ScrollToTop />
       <Navbar />
       <main>
         <Routes>
