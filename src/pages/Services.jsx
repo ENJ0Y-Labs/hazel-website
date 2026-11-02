@@ -103,7 +103,7 @@ export default function Services() {
             <p>Integrated offshore, onshore and specialized technical operations delivered with a focus on quality assurance, applicable industry standards and safe field execution.</p>
             <div className="services-hero-actions">
               <a className="services-button services-button-primary" href="#matrix">Browse Directory <ServiceIcon name="south" /></a>
-              <span className="services-certified"><ServiceIcon name="verified" />100% Certified Field Experts</span>
+              
             </div>
           </div>
 
