@@ -7,31 +7,23 @@ const clients = [
   {
     name: "Cedar Harvester Montessori Schools",
     category: "Education",
-    id: "048-EDU",
-    description: "Perimeter guarding & children security protocols.",
     logo: cedarLogo,
     alt: "Cedar Harvester Montessori Schools logo",
   },
   {
     name: "Eliminigwe Housing Estate Elelenwon",
     category: "Residential",
-    id: "102-RES",
-    description: "Housing Estate surveillance & security operations.",
     icon: "domain",
   },
   {
     name: "Amobi Services Ltd.",
     category: "Energy / Maritime",
-    id: "219-OGS",
-    description: "Technical logistics & offshore pipeline support integration.",
     logo: amobiLogo,
     alt: "Amobi Services Ltd. logo",
   },
   {
     name: "Hazel PR Company Ltd.",
     category: "Enterprise",
-    id: "001-HQ",
-    description: "Internal logistics, marketing and parent integration.",
     logo: hazelLogo,
     alt: "Hazel PR Company Ltd. logo",
   },
@@ -49,7 +41,7 @@ function ClientLogo({ client }) {
   return (
     <div className="clients-logo-placeholder" aria-hidden="true">
       <span className="material-symbols-outlined">{client.icon}</span>
-      <span>ESTATE</span>
+      <span>ORGANIZATION</span>
     </div>
   );
 }
@@ -62,7 +54,7 @@ export default function OurClients() {
           <div className="clients-hero-glow" />
           <div className="clients-eyebrow">
             <span className="material-symbols-outlined">verified_user</span>
-            <span>Partnership Directory & Institutional Verification</span>
+            <span>Organizations</span>
           </div>
           <div className="clients-hero-copy">
             <h1>Our Clients</h1>
@@ -72,8 +64,8 @@ export default function OurClients() {
             </p>
           </div>
           <div className="clients-hero-standards">
-            <div><i /><span>Standardized SLA Engagements</span></div>
-            <div><i /><span>Full Marine & Ground Compliance</span></div>
+            <div><i /><span>Service Enquiries</span></div>
+            <div><i /><span>Technical & Support Services</span></div>
           </div>
         </div>
       </section>
@@ -82,46 +74,27 @@ export default function OurClients() {
         <div className="container clients-directory-inner">
           <div className="clients-directory-heading">
             <div>
-              <span>Verified Deployments</span>
-              <h2>Strategic Engagements & Key Accounts</h2>
+              <span>Client Directory</span>
+              <h2>Organizations</h2>
             </div>
-            <p>Registry Index: HPR-CL-2026/Q1</p>
+
           </div>
 
           <div className="clients-account-grid">
             {clients.map((client) => (
-              <article className="clients-account-card" key={client.id}>
+              <article className="clients-account-card" key={client.name}>
                 <ClientLogo client={client} />
                 <div className="clients-account-copy">
                   <div className="clients-account-meta">
                     <span>{client.category}</span>
-                    <small>ID: {client.id}</small>
-                  </div>
+                    </div>
                   <h3>{client.name}</h3>
-                  <p>{client.description}</p>
                 </div>
               </article>
             ))}
           </div>
 
-          <div className="clients-metrics">
-            <article>
-              <span>Operation Continuity</span>
-              <strong>99.98%</strong>
-              <p>Verified uptime across manned patrols and fixed guard stations.</p>
-            </article>
-            <article>
-              <span>Technical Certifications</span>
-              <strong>ISO 9001:2015</strong>
-              <p>Full alignment with national maritime and private security standards.</p>
-            </article>
-            <article>
-              <span>Rapid Response Coverage</span>
-              <strong>&lt; 12 Mins</strong>
-              <p>Tactical mobilization units positioned throughout Port Harcourt.</p>
-            </article>
-          </div>
-        </div>
+       </div>
       </section>
 
       <section className="clients-enquiry">
