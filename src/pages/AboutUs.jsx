@@ -46,7 +46,7 @@ export default function AboutUs() {
           <div className="about-section-heading"><h2>Introduction</h2><i /></div>
           <div className="about-intro-grid">
             <aside className="about-entity-card">
-              <span className="about-kicker">Entity Verification</span>
+              <span className="about-kicker">Company Overview</span>
               <h3>Who We Are</h3>
               <p>Hazel PR Company Limited (RC: 1946114) is incorporated in Nigeria to provide competent services to the oil and gas and energy industries.</p>
               <div><span>Statutory Registration</span><strong>RC 1946114 / Federal Republic of Nigeria</strong></div>
@@ -91,8 +91,8 @@ export default function AboutUs() {
         <div className="container">
           <div className="about-section-heading"><h2>Corporate Policies</h2><i /></div>
           <div className="about-policy-grid">
-            <article><div className="about-policy-kicker"><span className="material-symbols-outlined">flag</span> National Development Framework</div><h3>Local Content Policy</h3><p>Committed to narrowing the skills gap between expatriate and Nigerian workers through local participation, staff training, and continuous development.</p><div><span>NOGICD Act Alignment</span><p>Human-capital advancement and indigenous technology transfer.</p></div></article>
-            <article><div className="about-policy-kicker"><span className="material-symbols-outlined">workspace_premium</span> Quality Management System</div><h3>Quality Policy</h3><p>Meeting customer requirements, continually evaluating our quality systems, and delivering services in line with agreed contractual obligations.</p><div><span>QA/QC Assurance Standard</span><p>Systematic reviews and adherence to applicable contract specifications.</p></div></article>
+            <article><div className="about-policy-kicker"><span className="material-symbols-outlined">flag</span> Local Participation</div><h3>Local Content Policy</h3><p>Committed to narrowing the skills gap between expatriate and Nigerian workers through local participation, staff training, and continuous development.</p><div><span>Local Content Commitment</span><p>Human-capital advancement and indigenous technology transfer.</p></div></article>
+            <article><div className="about-policy-kicker"><span className="material-symbols-outlined">workspace_premium</span> Quality Management Approach</div><h3>Quality Policy</h3><p>Meeting customer requirements, continually evaluating our quality systems, and delivering services in line with agreed contractual obligations.</p><div><span>Contract Quality Procedures</span><p>Systematic reviews and adherence to applicable contract specifications.</p></div></article>
           </div>
         </div>
       </section>
