@@ -18,7 +18,7 @@ const focusAreas = [
 
 export default function AboutUs() {
   return (
-    <main className="about-page">
+    <div className="about-page">
       <section className="about-hero">
         <div className="container about-hero-layout">
           <div className="about-hero-copy">
@@ -98,6 +98,6 @@ export default function AboutUs() {
       </section>
 
       <section className="about-cta"><div className="container"><h2>Want to Learn More?</h2><p>Speak with our team about procurement inquiries, capability statements, or potential partnerships.</p><a className="button button-primary" href="/contact">Contact Us <span className="material-symbols-outlined">arrow_forward</span></a></div></section>
-    </main>
+    </div>
   );
 }
