@@ -63,7 +63,7 @@ function ClientLogo({ client }) {
 
 export default function OurClients() {
   return (
-    <main className="clients-page">
+    <div className="clients-page">
       <section className="clients-hero">
         <div className="container">
           <div className="clients-hero-glow" />
@@ -152,6 +152,6 @@ export default function OurClients() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }
