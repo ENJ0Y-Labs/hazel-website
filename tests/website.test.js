@@ -76,13 +76,13 @@ test("About page does not create a nested main landmark", async () => {
   const app = await read("src/App.jsx");
   const about = await read("src/pages/AboutUs.jsx");
   assert.match(app, /<main>/);
-  assert.doesNotMatch(about, /<main(?:\\s|>)/);
+  assert.doesNotMatch(about, /<main(?:\s|>)/);
 });
 
 test("client directory does not display invented registry IDs or performance metrics", async () => {
   const clients = await read("src/pages/OurClients.jsx");
   assert.doesNotMatch(clients, /048-EDU|102-RES|219-OGS|001-HQ|99\\.98%|12 Mins|ISO 9001:2015/);
-  assert.doesNotMatch(clients, /Hazel PR Company Ltd\\./);
+  assert.doesNotMatch(clients, /Hazel PR Company Ltd\./);
 });
 
 test("page navigation invokes the scroll reset effect", async () => {
