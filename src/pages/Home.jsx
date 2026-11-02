@@ -1,3 +1,5 @@
+import heroImage from "../assets/img1.jpeg";
+
 const services = [
   { icon: "construction", title: "Welding & Fabrication", description: "Structural and piping repairs, offshore platform adjustments, and certified metal joining engineering.", standard: "PROCEDURE WPS/PQR VALIDATED" },
   { icon: "format_paint", title: "Blasting & Coating", description: "Abrasive and hydro blasting onshore and offshore to preserve structural integrity against marine corrosion.", standard: "NACE/AMPP STANDARDS" },
@@ -52,7 +54,7 @@ export default function Home() {
             </div>
           </div>
           <div className="hero-visual">
-            <img src="/assets/imgi.png" alt="Industrial and offshore technical operations" />
+            <img src={heroImage} alt="Industrial and offshore technical operations" />
             <div className="hero-image-shade" />
             <div className="hero-image-top">
               <span><span className="material-symbols-outlined">verified</span> TECHNICAL ASSET REGISTRY #HZ-904</span>
