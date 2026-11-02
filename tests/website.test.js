@@ -104,3 +104,11 @@ test("responsive navigation wraps instead of requiring horizontal scrolling", as
   assert.match(styles, /:focus-visible/);
 });
 
+
+test("site-wide responsive refinements cover tablet and narrow-phone layouts", async () => {
+  const styles = await read("src/index.css");
+  assert.match(styles, /@media \(max-width: 900px\)[\s\S]*?\.contact-main-layout \{ grid-template-columns: 1fr/);
+  assert.match(styles, /@media \(max-width: 480px\)[\s\S]*?\.services-metrics \{ grid-template-columns: 1fr/);
+  assert.match(styles, /@media \(max-width: 360px\)/);
+  assert.match(styles, /overflow-wrap: anywhere/);
+});
