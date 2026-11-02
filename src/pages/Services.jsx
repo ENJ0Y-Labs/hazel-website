@@ -19,7 +19,7 @@ const serviceGroups = [
   {
     title: "Specialist Services",
     services: [
-      ["electric_meter", "Electrical & Instrumentations", "Sensor calibration and equipment power setups, loop verification, switchboard maintenance and hazardous-area compliance."],
+      ["electric_meter", "Electrical & Instrumentations", "Sensor calibration and equipment power setups, loop verification, switchboard maintenance and hazardous-area requirements."],
       ["cable", "Cable Pulling", "Industrial electrical configurations, subsea umbilical lay-ins, cable-tray routing and termination testing."],
       ["downhill_skiing", "Rope Access", "Technicians for hard-to-reach inspection areas, including riser, flare-stack and hull interventions."],
       ["device_thermostat", "Thermal Insulation", "Temperature-critical cladding and pipe works, including cryogenic and high-heat insulation to help prevent corrosion under insulation."],
@@ -36,7 +36,7 @@ const serviceGroups = [
   {
     title: "Welding & Fabrication",
     services: [
-      ["handyman", "Welding & Weld Repairs (Structural & Piping)", "Structural and piping weld repairs, rig and platform repairs, boat-landing fabrication and certified hot-work execution."]
+      ["handyman", "Welding & Weld Repairs (Structural & Piping)", "Structural and piping weld repairs, rig and platform repairs, boat-landing fabrication and hot-work execution."]
     ]
   },
   {
@@ -51,7 +51,7 @@ const serviceGroups = [
     title: "Maintenance & Support",
     services: [
       ["domain", "Facility Maintenance", "Industrial facilities and administrative structures, including routine integrity management, HVAC maintenance and structural remediation."],
-      ["storage", "Tank Maintenance & Inspection", "Tank evaluation, annular-plate inspection, clean-up, repair and protective lining, with API 653-related inspection support."],
+      ["storage", "Tank Maintenance & Inspection", "Tank evaluation, annular-plate inspection, clean-up, repair and protective lining, with inspection support."],
       ["water_damage", "Tank Clearing Services", "Sludge management, safe entry, gas-freeing, waste disposal and environmentally responsible handling."],
       ["autorenew", "Shutdown/Turnaround Maintenance", "Coordinated, time-critical refinery and facility maintenance designed to reduce operational downtime."],
       ["apartment", "High Rise Building Maintenance", "Rope-access facade upkeep, glass replacement, structural sealant renewal and anchor testing."]
