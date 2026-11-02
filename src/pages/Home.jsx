@@ -1,12 +1,12 @@
 import heroImage from "../assets/img1.jpeg";
 
 const services = [
-  { icon: "construction", title: "Welding & Fabrication", description: "Structural and piping repairs, offshore platform adjustments, and certified metal joining engineering.", standard: "PROCEDURE WPS/PQR VALIDATED" },
-  { icon: "format_paint", title: "Blasting & Coating", description: "Abrasive and hydro blasting onshore and offshore to preserve structural integrity against marine corrosion.", standard: "NACE/AMPP STANDARDS" },
-  { icon: "biotech", title: "NDT Services", description: "Non-destructive testing (UT, MPT, RT, PAUT) assuring asset integrity without unnecessary downtime.", standard: "ASNT LEVEL II & III QUALIFIED" },
-  { icon: "paragliding", title: "Rope Access", description: "Specialist work at height for inspections, maintenance, and structural cleaning in restricted marine zones.", standard: "IRATA CERTIFIED SPECIALISTS" },
-  { icon: "propane_tank", title: "Tank Maintenance & Inspection", description: "Thorough testing, sludge removal, internal clearing, and tank shell integrity verification to API standards.", standard: "API 653 COMPLIANT RIGOR" },
-  { icon: "precision_manufacturing", title: "Installation Services", description: "High-standard engineering setups, subsea rigging assembly, and heavy industrial instrumentation commissioning.", standard: "RIGGING CODE BS EN 12079" },
+  { icon: "construction", title: "Welding & Fabrication", description: "Structural and piping repairs, offshore platform adjustments, and certified metal joining engineering." },
+  { icon: "format_paint", title: "Blasting & Coating", description: "Abrasive and hydro blasting onshore and offshore to preserve structural integrity against marine corrosion." },
+  { icon: "biotech", title: "NDT Services", description: "Non-destructive testing (UT, MPT, RT, PAUT) assuring asset integrity without unnecessary downtime." },
+  { icon: "paragliding", title: "Rope Access", description: "Specialist work at height for inspections, maintenance, and structural cleaning in restricted marine zones." },
+  { icon: "propane_tank", title: "Tank Maintenance & Inspection", description: "Thorough testing, sludge removal, internal clearing, and tank shell integrity verification to API standards." },
+  { icon: "precision_manufacturing", title: "Installation Services", description: "High-standard engineering setups, subsea rigging assembly, and heavy industrial instrumentation commissioning." },
 ];
 
 const industries = [
@@ -27,7 +27,6 @@ const clients = [
   { icon: "apartment", name: "Eliminigwe Housing Estate Elelenwon" },
   { icon: "school", name: "Cedar Harvester Montessori Schools" },
   { icon: "corporate_fare", name: "Amobi Services Ltd." },
-  { icon: "verified_user", name: "Hazel PR Company Ltd." },
 ];
 
 function SectionHeading({ title, description }) {
@@ -40,7 +39,7 @@ export default function Home() {
       <section className="hero-section">
         <div className="home-container hero-layout">
           <div className="hero-copy">
-            <div className="compliance-pill"><span />NIGERIAN CONTENT DEVELOPMENT &amp; MONITORING COMPLIANT</div>
+            <div className="compliance-pill"><span />INDIGENOUS TECHNICAL SERVICES</div>
             <h1>Professional Technical Services for Oil &amp; Gas, Energy, Construction &amp; Maritime Industries</h1>
             <p className="hero-description">Hazel PR Company Limited is a 100% indigenous owned company with foreign technical support partners focused on providing diverse technical services in Nigeria and beyond.</p>
             <div className="hero-actions">
@@ -49,20 +48,19 @@ export default function Home() {
             </div>
             <div className="hero-stats">
               <div><strong>100%</strong><span>Indigenous Equity</span></div>
-              <div><strong>ISO</strong><span>Operational Norms</span></div>
-              <div><strong>24/7</strong><span>Rapid Support</span></div>
+              
             </div>
           </div>
           <div className="hero-visual">
             <img src={heroImage} alt="Industrial and offshore technical operations" />
             <div className="hero-image-shade" />
             <div className="hero-image-top">
-              <span><span className="material-symbols-outlined">verified</span> TECHNICAL ASSET REGISTRY #HZ-904</span>
+              <span><span className="material-symbols-outlined">verified</span> TECHNICAL SERVICES</span>
               <span>PORT HARCOURT OPERATIONAL BASE</span>
             </div>
             <div className="deployment-card">
-              <div className="deployment-heading"><span><span className="material-symbols-outlined">engineering</span>Field Deployment Unit 01</span><b>Active Ops</b></div>
-              <p>Full QA/QC compliance verified for high-pressure line inspection and deepwater support operations.</p>
+              <div className="deployment-heading"><span><span className="material-symbols-outlined">engineering</span>Technical Services</span><b>Onshore &amp; Offshore</b></div>
+              <p>Technical support for industrial and infrastructure projects.</p>
               <div className="deployment-progress"><span /></div>
             </div>
           </div>
@@ -98,7 +96,7 @@ export default function Home() {
         <div className="home-container reasons-layout">
           <div className="reasons-intro">
             <SectionHeading title="Why Choose Hazel PR Company" description="Through strategic alliances, meticulous standard execution, and deep-rooted local proficiency, we establish dependable benchmarks across every operational theatre." />
-            <div className="compliance-note"><strong>COMPLIANCE ASSURANCE</strong><p>Direct alignment with applicable Nigerian regulatory requirements and relevant international industrial standards.</p></div>
+            <div className="compliance-note"><strong>SERVICE APPROACH</strong><p>Direct alignment with applicable Nigerian regulatory requirements and relevant international industrial standards.</p></div>
           </div>
           <div className="reasons-grid">
             {reasons.map((reason) => <article className="reason-card" key={reason.title}>
@@ -118,7 +116,7 @@ export default function Home() {
 
       <section className="home-section clients-section">
         <div className="home-container">
-          <SectionHeading title="Our Clients" description="Trusted by leading property, industrial, and institutional entities." />
+          <SectionHeading title="Our Clients" description="Organizations listed by Hazel PR Company." />
           <div className="client-grid">
             {clients.map((client) => <article className="client-card" key={client.name}><span className="material-symbols-outlined">{client.icon}</span><h3>{client.name}</h3></article>)}
           </div>
